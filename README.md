@@ -1,6 +1,52 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+npm install -g create-react-app
+npx create-react-app react-intl-demo
+cd react-intl-demo
+npm install --save react-intl
+```
+
+## Wrap your app with IntlProvider in `src/index.js`
+
+```
+import { IntlProvider } from 'react-intl';
+
+ReactDOM.render(
+    <React.StrictMode>
+        <IntlProvider locale="en">
+            <App />
+        </IntlProvider>
+    </React.StrictMode>,
+    document.getElementById('root')
+);
+```
+
+## Use FormattedMessage and intl.formatMessage for localizable strings in `src/App.js`
+
+```
+import { FormattedMessage, injectIntl } from 'react-intl';
+
+...
+<p>
+    {intl.formatMessage({
+        id: 'app.text',
+        description: 'Welcome header on app main page',
+        defaultMessage:
+            'Edit <code>src/App.js</code> and save to reload.<br/>Now with {what}!',
+        what: 'react-intl',
+    })}
+</p>
+
+<FormattedMessage id="app.learn-react-link"
+                  description="Link on react page"
+                  defaultMessage="Learn React"/>
+
+...
+
+export default injectIntl(App);
+```
 
 ## Available Scripts
 
