@@ -1,4 +1,4 @@
 {
-    "app.text": "<code>src/App.js</code>를 수정하고 저장하면 자동 업데이트가 됩니다.{br}{what}로 지원됩니다!",
-    "app.learn-react-link": "React을 배우세요."
+    "app.learn-react-link": "React을 배우세요.",
+    "app.text": "<code>src/App.js</code>를 수정하고 저장하면 자동 업데이트가 됩니다.{br}{what}로 지원됩니다!"
 }

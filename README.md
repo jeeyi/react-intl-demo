@@ -60,6 +60,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+### `yarn extract`
+
+Extracts messages for translation from `*.js` in `src` directory and put them in `src/translations/en.json`.\
+See the section about [message extraction](https://formatjs.io/docs/getting-started/message-extraction/) for more information.
+
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
