@@ -17,6 +17,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "extract": "formatjs extract src/**/*.js --out-file src/translations/en.json --format simple",
+        "pseudo": "formatjs compile src/translations/en.json --format simple --out-file src/translations/en-XA.json --pseudo-locale en-XA --ast",
         "eject": "react-scripts eject"
     },
     "eslintConfig": {

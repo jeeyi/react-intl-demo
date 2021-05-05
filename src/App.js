@@ -24,6 +24,7 @@ function App() {
                         }
                     )}
                 </p>
+                <p>This is HARD-CODED!!</p>
                 <a
                     className="App-link"
                     href="https://reactjs.org"
